@@ -1,0 +1,449 @@
+
+body, html {
+    font-family: '';
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+  padding: 10px 15px; 
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+
+
+nav ul li a:hover{
+
+  color: #fff; /* Change text color on hover */
+  background-color: #54b3d6; /* Add a background color on hover */
+  box-shadow: inset 0 0 0 3px #54b3d6;
+}
+
+
+/* Add this to your CSS */
+
+header { /* Assuming #home is the first section below your navbar */
+    margin-top: 50px; /* Adjust the value as needed */
+}
+
+
+h1{
+    font-size: 90px;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px 10px;
+    margin-left: 20px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px 8px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+   /*margin-block-start: auto;*/
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: -16px;
+    width: 90%;
+  }
+
+  .card p{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+
+  #myname{
+
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  
+
+
+  #myname:hover{
+
+    color: #fff;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+  font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 3;
+    text-decoration: none;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 40%;
+    height: 500px;
+    perspective: 1000px;
+    margin-left: 880px;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+    
+  }
+
+  #proverb{
+    text-align: justify;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back p{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+
+
+.modified-image{
+  width:500px;
+  height:480px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.scroll-container {
+  width: 100%;
+  white-space: nowrap; 
+  overflow-x: auto; 
+  padding: 30px; 
+  margin-top: -200px;
+  
+}
+
+
+.scroll-item {
+  display: inline-block; 
+  margin-right: 41px; 
+  width: 200px; 
+  height: 160px; 
+  background-color: #f1f1f1;
+  box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 160px;
+}
+
+.scroll-item p{
+
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+#SkillName{
+
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 160px;
+margin-left: 22px;
+
+
+}
+
+
+/* ... existing styles for flip cards ... */
+
+.flip-cards-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.flip-card2 {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card2 .flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card2 .flip-card-front2,
+.flip-card2 .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card2 .flip-card-front2 {
+  background-color: #E0F4FF;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card2 .flip-card-back2 {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add more styles for the second set of flip cards as needed */
+
+/* Container for the project grid */
+.Project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Style for each project card */
+.Project-card {
+  border: 20px solid #31304D;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+  width: 100%;
+}
+
+/* Hover effect for project cards */
+.Project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Style for project card image */
+.Project-card img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  margin-bottom: 10px;
+}
+
+/* Style for project card title */
+.Project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Style for project card description */
+.Project-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Add more styles as needed */
+#ProjectName{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 160px;
+  margin-left: 22px;
+
+}
+
+.grid-container {
+  display:flex;
+  gap: 40px; /* Adjust the gap between grids as needed */
+}
+
+.Project-grid {
+  display: inline-flex;
+  vertical-align: top; /* Align the top edges of the grids */
+  width: calc(70% - 10px); /* Adjust the width as needed, considering the gap */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  margin-right: 20px; /* Adjust the margin between grids as needed */
+}
+/* Container for the project grid */
+
+
+/* Style for each project card */
+.Project-card2 {
+  border: 20px solid #31304D;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+  width: 100%;
+  display: inline-block; /* Added this line to make inline cards*/
+}
+
+/* Hover effect for project cards */
+.Project-card2:hover {
+  transform: scale(1.05);
+}
+
+/* Style for project card image */
+.Project-card2 img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  margin-bottom: 10px;
+}
+
+/* Style for project card title */
+.Project-card2 h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Style for project card description */
+.Project-card2 p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
+/* Add your styling for the contact form here */
+#contact {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#contactme{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 100px;
+  margin-left: 22px;
+}
+
+/* Add your styling for the footer here */
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
